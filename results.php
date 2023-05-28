@@ -52,6 +52,7 @@ if ($query) {
 </head>
 
 <body>
+    <?php include 'header.php'; ?>
     <?php include 'searchbar.php'; ?>
     <div class="container">
         <h1>Cocktail App - Results</h1>

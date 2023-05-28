@@ -37,6 +37,7 @@ if (!empty($id)) {
 </head>
 
 <body>
+    <?php include 'header.php'; ?>
     <!-- Start Search Bar -->
     <?php include 'searchbar.php'; ?>
     <!-- End Search Bar -->

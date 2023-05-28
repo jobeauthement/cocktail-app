@@ -132,7 +132,7 @@ table {
 
 body {
   /* Set a beautiful tropical background color */
-  background-color: #03a9f4;
+  background-color: #2de3e4;
 
   /* Using a Google font for a fresh and modern feel */
   font-family: "Roboto", sans-serif;
@@ -144,10 +144,31 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 20px;
+  /* padding: 20px; */
 
   /* The min-height rule ensures that the flex container (body) will at least be the full height of the viewport */
   min-height: 100vh;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  max-width: 40%;
+  height: auto;
+  border: 2px solid red;
+  margin: 0 auto;
+}
+
+.title {
+  display: flex;
+  font-size: 7rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 /* Style for the search bar */
@@ -155,7 +176,7 @@ body {
   width: 100%;
   max-width: 600px;
   padding: 20px;
-  background-color: #ffffff;
+  background-color: #c78483;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   display: flex;
@@ -170,7 +191,7 @@ body {
   padding: 20px;
   width: 100%;
   max-width: 600px;
-  background-color: #ffffff;
+  background-color: #c78483;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   text-align: center;

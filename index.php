@@ -9,10 +9,13 @@
 </head>
 
 <body>
+
+
     <!-- include is a PHP statement which takes all the text/code/markup in the specified file and copies it into the file that uses the include statement -->
     <!-- PHP foreach loop which iterates over each item in the $tips array (which is defined in tips_data.php) -->
-    <!-- For each tip, it generates an HTML div that includes the tip. The div is initially hidden (style="display: none") -->
+    <!-- For each tip, it generates an HTML div that includes the tip. The div is initially hidden (style=" display: none") -->
     <?php
+    include 'header.php';
     include 'searchbar.php';
     include 'tips_data.php';
     foreach ($tips as $index => $tip) : ?>
