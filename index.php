@@ -9,6 +9,14 @@
 </head>
 
 <body>
+    <header class="header">
+        <div class="topnav">
+            <a class="active" href="#home">Home</a>
+            <a href="#news">News</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+        </div>
+    </header>
 
 
     <!-- include is a PHP statement which takes all the text/code/markup in the specified file and copies it into the file that uses the include statement -->
@@ -21,7 +29,9 @@
     foreach ($tips as $index => $tip) : ?>
         <!-- Each tip div has a class of "tip", and the content is structured as "Tip {tip number}: {tip text}". The tip number is one more than the array index (since array indices start at 0) -->
         <!-- The explode function is used to split the $tip string into two parts at ': '. The second part is the actual tip, which is displayed -->
-        <div class="tip" style="display: none;">Tip <?php echo ($index + 1) . ': ' . explode(': ', $tip)[1]; ?></div>
+        <div class="tip" style="display: none;">
+            Tip <?php echo ($index + 1) . ': ' . explode(': ', $tip)[1]; ?>
+        </div>
     <?php endforeach; ?>
     <!-- Including an external JavaScript file (tips.js) which contains logic for showing and hiding tips plugin -->
     <script src="tips.js"></script>

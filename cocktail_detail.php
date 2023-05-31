@@ -23,34 +23,25 @@ if (!empty($id)) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cocktail Details</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cocktail App - Results</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cocktail_detail-style.css">
 </head>
 
 <body>
+    <a href="index.php">Home</a>
     <?php include 'header.php'; ?>
     <!-- Start Search Bar -->
     <?php include 'searchbar.php'; ?>
     <!-- End Search Bar -->
     <div class="container">
-        <h1>Cocktail Details</h1>
-        <a href="index.php">Search again</a>
+        <!-- <h1 class="cocktail-details">Cocktail Details:</h1> -->
+
         <?php if (!empty($cocktail)) : ?>
-            <h2><?php echo htmlspecialchars($cocktail['strDrink']); ?></h2>
-            <img src="<?php echo htmlspecialchars($cocktail['strDrinkThumb']); ?>" alt="<?php echo htmlspecialchars($cocktail['strDrink']); ?>" width="400">
-            <p><strong>Glass:</strong> <?php echo htmlspecialchars($cocktail['strGlass']); ?></p>
-            <p><strong>Instructions:</strong> <?php echo htmlspecialchars($cocktail['strInstructions']); ?></p>
-            <h3>Ingredients:</h3>
-            <ul>
+            <h2 class="cocktail-name"><?php echo htmlspecialchars($cocktail['strDrink']); ?></h2>
+            <img class="cocktail-image" src="<?php echo htmlspecialchars($cocktail['strDrinkThumb']); ?>" alt="<?php echo htmlspecialchars($cocktail['strDrink']); ?>" width="400">
+            <p class="cocktail-glass"><strong>Glass:</strong> <?php echo htmlspecialchars($cocktail['strGlass']); ?></p>
+            <p class="cocktail-instructions"><strong>Instructions:</strong> <?php echo htmlspecialchars($cocktail['strInstructions']); ?></p>
+            <h3 class="ingredients-title">Ingredients:</h3>
+            <ul class="cocktail-ingredients">
                 <?php
                 for ($i = 1; $i <= 15; $i++) {
                     $ingredient = $cocktail["strIngredient$i"];
