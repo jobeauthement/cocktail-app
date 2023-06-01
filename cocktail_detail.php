@@ -24,14 +24,13 @@ if (!empty($id)) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cocktail Details</title>
     <link rel="stylesheet" href="cocktail_detail-style.css">
+    <link rel="stylesheet" href="index-style.css">
 </head>
 
 <body>
     <a href="index.php">Home</a>
     <?php include 'header.php'; ?>
-    <!-- Start Search Bar -->
-    <?php include 'searchbar.php'; ?>
-    <!-- End Search Bar -->
+
     <div class="container">
         <!-- <h1 class="cocktail-details">Cocktail Details:</h1> -->
 

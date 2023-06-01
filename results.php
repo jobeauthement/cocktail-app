@@ -49,11 +49,11 @@ if ($query) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cocktail App - Results</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="index-style.css">
 </head>
 
 <body>
     <?php include 'header.php'; ?>
-    <?php include 'searchbar.php'; ?>
     <div class="container">
         <h1>Cocktail App - Results</h1>
         <div class="toolbar"><a href="index.php" class="search-link">New Search</a></div>

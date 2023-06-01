@@ -1,5 +1,4 @@
 <!-- Search Bar -->
-<link rel="stylesheet" href="index.css">
 <div class="container search-bar">
     <form action="results.php" method="get">
         <input type="text" name="query" placeholder="Search..." required>
